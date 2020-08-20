@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <title>Joseph McGrath</title>
+  </head>
+  
+  <!-- Page 1 -->
+  <body class="page-1">
+    <!-- Creating particles -->
+    <div id="particles-js">
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active"><img class="logo" src="/img/Signature.png" alt=""></a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a class="links" href="#home">Home</a>
+    <a class="links" href="#about">About</a>
+    <a class="links" href="#work">Work</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+      </div>
+      <div id="welcome-message">
+        <h1>Hello World!</h1>
+        <p> Welcome to my personal webpage, feel free to have a look around!</p></h2></div>
+    </div>
+    <div class="arrow-down"></div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function(){
+        console.log('particles.json loaded...');
+      });
+    </script>
+
+<!-- Script to make links appear when clicked -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+  </body>
+
+
+<!-- Page 2 -->
+  <body class="page-2">
+    <img class="portrait" src="/img/Me.jpg" alt="Picture of me">
+    <p class="biography">Hi, I'm Joseph McGrath - a Midlands based Junior Software Developer in Training.<br><br> I recently graduated from Coventry University with a First Class Honors in Mechanical Engineering.</p>
+    
+    
+    
+    <div class="container">
+      <div class="social" id="linkedin">
+        <i class="fab fa-linkedin-square"></i>
+      </div>
+      <div class="social" id="facebook">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="social" id="twitter">
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+  
+  </body>

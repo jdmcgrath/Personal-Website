@@ -1,0 +1,175 @@
+/* Set font and reset margin & padding to be set */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Taper size of logo */
+.logo{
+    max-height: 30px;
+}
+
+/* Format the welcome message */
+#welcome-message{
+    text-align: center;
+    background:transparent;
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 40vh; left: 0; bottom: 0; right: 0;
+    color: white;
+    z-index: 1;
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+    width:99%
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display:none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-weight: bold;
+  }
+
+  .topnav a.links:hover {
+      text-decoration: underline;
+      color: rgb(83, 83, 83);
+      transition-duration: 0.5s;
+  }
+  
+  .topnav a.links {
+      text-align: right;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+  }
+  
+  /* Change hamburger color to black on mouse hover */
+  .topnav a.icon:hover {
+    color: rgb(83, 83, 83);
+    transition-duration: 0.5s;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: transparent;
+    color: red;
+  }
+
+  /* Creating animated arrow */
+  .arrow-down {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .arrow-down::after {
+      content:"";
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: -50vh;
+      left: 0;
+      border-right: 4px solid #ffff;
+      border-bottom: 4px solid #ffff;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      -webkit-animation: 3s arrow infinite ease;
+  }
+
+  @-webkit-keyframes arrow {
+      0%, 100% {
+          top: 50px;
+      }
+      50% {
+          top: 80px;
+      }
+  }
+
+  @keyframes arrow {
+    0%, 100% {
+        top: 50px;
+    }
+    50% {
+        top: 80px;
+    }
+}
+
+#particles-js{
+    background-color:#41e4f5;
+    height:100vh;
+    z-index: -1;
+}
+
+
+img.portrait {
+    border-radius: 50%;
+    max-width: 55vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5vh;
+}
+
+.biography {
+    text-align: center;
+    position: relative;
+    top: 8vh;
+    font-size: 23px;
+    margin: 0 10%;
+}
+
+.container{
+    position: relative;
+    border: 1px solid transparent;
+    text-align: center;
+    top: 20vh;
+}
+.social{
+    display: inline-block;
+    margin: 30px;
+}
+
+.social i{
+    font-size: 20vw;
+}
+
+.social i:hover{
+    opacity: 0.9;
+    transition-duration: 0.3s;
+}
+
+#linkedin{
+    color: #0077b5;
+}
+
+#facebook{
+    color: #2d88ff;
+}
+
+#twitter{
+    color: #1da1f2;
+}
