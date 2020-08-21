@@ -5,19 +5,18 @@
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Joseph McGrath</title>
   </head>
   
   <!-- Page 1 -->
-  <body class="page-1">
+  <body>
+    <div class="page-1">
     <!-- Creating particles -->
     <div id="particles-js">
-
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Top Navigation Menu -->
 <div class="topnav">
@@ -59,11 +58,8 @@ function myFunction() {
   }
 }
 </script>
-  </body>
-
-
+</div>
 <!-- Page 2 -->
-  <body class="page-2">
     <img class="portrait" src="/img/Me.jpg" alt="Picture of me">
     <p class="biography">Hi, I'm Joseph McGrath - a Midlands based Junior Software Developer in Training.<br><br> I recently graduated from Coventry University with a First Class Honors in Mechanical Engineering.</p>
     
@@ -71,14 +67,60 @@ function myFunction() {
     
     <div class="container">
       <div class="social" id="linkedin">
-        <i class="fab fa-linkedin-square"></i>
+        <a class="socials" href="https://www.linkedin.com/in/joseph-daniel-mcgrath/" target="_blank">
+          <i class="fab fa-linkedin-square"></i>
+        </a>
       </div>
       <div class="social" id="facebook">
+        <a class="socials" href="https://www.facebook.com/joseph.mcgrath3" target="_blank">
         <i class="fab fa-facebook-f"></i>
+        </a>
       </div>
       <div class="social" id="twitter">
+        <a class="socials" href="https://twitter.com/joebi_" target="_blank">
         <i class="fab fa-twitter"></i>
+        </a>
       </div>
     </div>
+
+  <!-- Page 3 -->
+<div class="page-3">
+  <h1 class="p3-title">Things I'm Excited To Code</h1>
+  <div class="split left">
+    <div class="centered">
+      <i class="fa fa-html5"></i>
+      <h2>Websites</h2>
+      <p>Creating websites using HTML & CSS will be valuable for self-promotion and in any career.</p>
+      <br><br>
+      <i class="fab fa-discord"></i>
+      <h2>Discord Bots</h2>
+      <p>Using my newfound skills to create bots on discord and other socials apps that make people's lives better or easier.</p>
+    </div>
+  </div>
   
-  </body>
+  <div class="split right">
+    <div class="centered">
+      <i class="fab fa-app-store-ios"></i>
+      <h2>Apps</h2>
+      <p>Creating apps could be a fun pastime and could lead to future job opportunies.</p>
+      <br><br><br>
+      <i class="fab fa-java"></i>
+      <h2>Java</h2>
+      <p>Creating games that me and my friends can play together. There are plenty of jobs down this avenue.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Page 4 -->
+<div class="page-4">
+  <div id="particles2-js">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+      particlesJS.load('particles2-js', 'particles2.json', function(){
+        console.log('particles.json loaded...');
+      });
+    </script>
+
+</div>
+</body>

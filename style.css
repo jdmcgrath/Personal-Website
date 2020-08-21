@@ -5,6 +5,9 @@ body {
     padding: 0;
 }
 
+a {color: inherit;
+}
+
 /* Taper size of logo */
 .logo{
     max-height: 30px;
@@ -124,7 +127,6 @@ body {
     z-index: -1;
 }
 
-
 img.portrait {
     border-radius: 50%;
     max-width: 55vw;
@@ -146,11 +148,12 @@ img.portrait {
     position: relative;
     border: 1px solid transparent;
     text-align: center;
-    top: 20vh;
+    top: 15vh;
 }
+
 .social{
     display: inline-block;
-    margin: 30px;
+    margin: 20px;
 }
 
 .social i{
@@ -172,4 +175,65 @@ img.portrait {
 
 #twitter{
     color: #1da1f2;
+}
+
+.page-3{
+background-color: #31debf;
+position: relative;
+height: 100vh;
+margin-top: 15vh;
+color:white;
+}
+
+.p3-title{
+    text-align: center;
+    position: relative;
+    margin-bottom: 0;
+    z-index: 1;
+    padding: 3vh 5vw 0 5vw;
+}
+
+/* Split the screen in half */
+.split {
+  height: 89vh;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 5vh;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 80%
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.page-3 i{
+    font-size: 20vw;
+}
+
+
+#particles2-js{
+    background-color:#f8b3ad;
+    height:100vh;
+    z-index: -1;
 }
