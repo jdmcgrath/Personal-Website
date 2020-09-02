@@ -10,7 +10,7 @@ a {color: inherit;
 
 /* Taper size of logo */
 .logo{
-    max-height: 30px;
+    max-height: 25px;
 }
 
 /* Format the welcome message */
@@ -101,6 +101,8 @@ a {color: inherit;
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
       -webkit-animation: 3s arrow infinite ease;
+      animation: 3s arrow infinite ease;
+      
   }
 
   @-webkit-keyframes arrow {
@@ -129,7 +131,7 @@ a {color: inherit;
 
 img.portrait {
     border-radius: 50%;
-    max-width: 55vw;
+    max-width: 40vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -140,8 +142,8 @@ img.portrait {
     text-align: center;
     position: relative;
     padding-top: 5vh;
-    font-size: 23px;
-    margin: 0 10%;
+    font-size: 17px;
+    margin: 0 20%;
 }
 
 .container{
@@ -150,13 +152,13 @@ img.portrait {
     flex-wrap: nowrap;
     justify-content: center;
     align-self: center;
-    margin-top:5vh;
+    margin: 3vh 15% 0 15%;
 }
 
 .social{
-    flex:1;
+    flex: 1;
     text-align: center;
-    font-size: 20vw;
+    font-size: 15vw;
 }
 
 .social i:hover{
@@ -179,59 +181,60 @@ img.portrait {
 .page-3{
 background-color: #31debf;
 position: relative;
-min-height: 100vh;
 color:white;
+height: auto;
 }
 
 .p3-title{
     text-align: center;
     position: relative;
-    margin-bottom: 0;
     z-index: 1;
-    padding: 3vh 5vw 0 5vw;
+    padding: 3vh 20% 0 20%;
+    font-size: 25px;
 }
 
-/* Split the screen in half */
-.split {
-  height: 89vh;
-  width: 50%;
-  position: absolute;
-  z-index: 1;
-  padding-top: 5vh;
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    padding: 5% 0 5% 0;
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
-}
-
-/* If you want the content centered horizontally and vertically */
 .centered {
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
   width: 80%
 }
 
-/* Style the image inside the centered container, if needed */
 .centered img {
   width: 150px;
   border-radius: 50%;
 }
 
 .page-3 i{
-    font-size: 20vw;
+    font-size: 15vw;
 }
 
+.page-3 .centered h2{
+    font-size: 20px;
+}
 
 #particles2-js{
     background-color:#f8b3ad;
     height:100vh;
     z-index: -1;
+}
+
+#right-scroll{
+    margin: 1vh 0 2vh 0;
+}
+
+#right-scroll:hover{
+    color: rgb(83, 83, 83);
+      transition-duration: 0.5s;
 }
