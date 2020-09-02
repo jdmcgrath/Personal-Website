@@ -20,7 +20,7 @@ a {color: inherit;
     position: absolute;
     display: block;
     margin: auto;
-    top: 40vh; left: 0; bottom: 0; right: 0;
+    top: 40vh; left: 15%; bottom: 0; right: 15%;
     color: white;
     z-index: 1;
 }
