@@ -238,3 +238,22 @@ height: auto;
     color: rgb(83, 83, 83);
       transition-duration: 0.5s;
 }
+
+
+/* Centering the button IN PROGRESS */
+.page-3 button{
+    background-color: transparent;
+    border: none;
+}
+
+hr{
+    width:50%;
+    text-align:center;
+    height: 0.5vh;
+    background-color:white;
+    border-width: 0;
+}
+
+.hobbies{
+    padding: 5% 20% 5% 20%;
+}
