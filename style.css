@@ -269,8 +269,13 @@ hr{
     font-weight: bold;
 }
 
+.employment_opener{
+    margin-top: 0;
+}
 
-
+.resume{
+    text-align: center;
+}
 
 
 /* Changing website elements based on size of viewport */
@@ -350,5 +355,13 @@ hr{
     .column{
         padding-top: 1vh;
         padding-bottom: 0;
+    }
+    .hobbies{
+        display: flex;
+        padding: 0 10% 0 10%;
+    }
+    .hobbies p{
+        width: 25%;
+        padding: 0 5% 2vh 5%;
     }
 }
