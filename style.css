@@ -125,7 +125,7 @@ a {color: inherit;
 
 #particles-js{
     background-color:#41e4f5;
-    height:100vh;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -141,7 +141,6 @@ img.portrait {
 .biography {
     text-align: center;
     position: relative;
-    padding-top: 5vh;
     font-size: 17px;
     margin: 0 20%;
 }
@@ -189,10 +188,9 @@ height: auto;
     text-align: center;
     position: relative;
     z-index: 1;
-    padding: 3vh 20% 0 20%;
+    padding: 2vh 20% 0 20%;
     font-size: 25px;
 }
-
 
 .row {
     display: flex;
@@ -226,29 +224,13 @@ height: auto;
 
 #particles2-js{
     background-color:#f8b3ad;
-    height:100vh;
+    height: 50vh;
     z-index: -1;
 }
 
-#right-scroll{
-    margin: 1vh 0 2vh 0;
-}
-
-#right-scroll:hover{
-    color: rgb(83, 83, 83);
-      transition-duration: 0.5s;
-}
-
-
-/* Centering the button IN PROGRESS */
-.page-3 button{
-    background-color: transparent;
-    border: none;
-}
-
 hr{
-    width:50%;
-    text-align:center;
+    width: 70%;
+    text-align: center;
     height: 0.5vh;
     background-color:white;
     border-width: 0;
@@ -256,4 +238,117 @@ hr{
 
 .hobbies{
     padding: 5% 20% 5% 20%;
+}
+
+.about_me{
+    text-align: center;
+}
+
+.background_box{
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 80%;
+    
+    border-radius: 2vh;
+    margin-top: 5vh;
+    }
+
+.employment_opener{
+    text-align: center;
+    margin: 5% 5% 5% 5%;
+}
+
+.resume{
+    margin: 5% 20% 5% 5%;
+}
+
+.phone_number, .e-mail, .CV{
+    font-weight: bold;
+}
+
+
+
+
+
+/* Changing website elements based on size of viewport */
+
+@media (min-width: 544px) {
+    h1{
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    .biography {
+        font-size: 1.2em;
+    }
+    .p3-title {
+        font-size: 2em;
+    }
+    .about_me {
+        font-size: 1.7em;
+    }    
+  }
+
+  @media (min-width: 650px) {
+    img.portrait {
+        max-width: 25vw;
+    }  
+    .social {
+        font-size: 10vw;
+    }
+    .container {
+        margin: 0 25% 0 25%;
+    }
+    i.fa-desktop, i.fa-gamepad, i.fa-plane {
+        font-size: 5em;
+    }
+
+  @media (min-width: 898px) {
+    .logo {
+          max-height: 35px;
+    }
+    .hobbies{
+        padding: 2% 25% 2% 25%;
+    }
+  }
+
+  @media (min-width: 1337px) {
+    i.fa-html5, i.fa-app-store-ios, i.fa-discord, i.fa-java {
+        font-size: 8em;
+  }
+}
+
+@media (min-width: 1566px) {
+    h1{
+        font-size: 3em;
+    }
+    img.portrait {
+        max-width: 15vw;
+    }  
+    .social {
+    font-size: 5vw;
+    }
+    .container {
+        margin: 0 35% 0 35%;
+    }
+}
+
+@media (min-width: 1867px) {
+    .left_column{
+        margin: 0 0 5% 20%;
+    }
+    .right_column{
+        margin: 0 20% 5% 0;
+    }
+    .column{
+        padding-top: 1vh;
+        padding-bottom: 0;
+    }
 }
