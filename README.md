@@ -1,4 +1,4 @@
-# Personal-Website
+# Personal Site
 
 This was the first site that I ever made! <br />
 It was made as a bit of learning before I started my coding bootcamp. It explains a little about me, and what I enjoy.
